@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route('/collect')
 def collect_data():
+    
     ip_address = request.remote_addr
     user_agent = request.headers.get('User-Agent')
     location = 'DummyLocation'  # Replace with actual logic or API call for location
